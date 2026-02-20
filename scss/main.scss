@@ -1,0 +1,24 @@
+@use './utils';
+@use './base';
+
+
+@use './components/buttons';
+@use './components/carousel-button';
+@use './components/form';
+@use './components/input';
+@use './components/link';
+@use './components/pagination';
+@use './components/procedure-card';
+
+
+@use './layouts/about-section';
+@use './layouts/advantages-section';
+@use './layouts/background';
+@use './layouts/contact-section';
+@use './layouts/container';
+@use './layouts/footer';
+@use './layouts/header';
+@use './layouts/hero-section';
+@use './layouts/mobile-menu';
+@use './layouts/modal';
+@use './layouts/procedures-section';

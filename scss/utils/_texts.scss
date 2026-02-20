@@ -1,0 +1,26 @@
+@use './variebles' as *;
+
+.text-accent {
+    color: var(--color-primary-normal);
+}
+
+.text-bold {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    text-transform: capitalize;
+
+    @media screen and (min-width: $bp-tablet) {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 38px;
+    }
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}

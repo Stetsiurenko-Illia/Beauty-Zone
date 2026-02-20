@@ -1,0 +1,18 @@
+@use '../utils/' as *;
+
+.background {
+    background-image: url("/img/background.svg");
+    background-repeat: no-repeat;
+    background-position: 45% 0%;
+    margin-top: -100px;
+
+    @media screen and (min-width: $bp-tablet) {
+        margin-top: -25px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+        margin-top: 0px;
+        background-position: top center;
+        background-size: cover;
+    }
+}

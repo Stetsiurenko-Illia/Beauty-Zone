@@ -1,0 +1,58 @@
+@use '../utils/' as *;
+
+.procedures-section {
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $bp-tablet) {
+        margin-bottom: 96px;
+    }
+
+
+    &__title {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        margin-bottom: 24px;
+
+        @media screen and (min-width: $bp-tablet) {
+            font-weight: 700;
+            font-size: 64px;
+            margin-bottom: 48px;
+        }
+    }
+
+    &__slider {
+
+        position: relative;
+        align-items: center;
+        margin: 0 auto;
+
+        @media screen and (min-width: $bp-tablet) {
+            width: calc(100% - 76px *2);
+        }
+
+    }
+
+    &__btn {
+        display: none;
+        position: absolute;
+        top: calc(50% - 44px);
+        transform: translateY(-50%);
+
+        @media screen and (min-width: $bp-tablet) {
+            display: flex;
+        }
+
+        &.prev {
+            left: -76px;
+        }
+
+        &.next {
+            right: -76px;
+        }
+    }
+
+
+}

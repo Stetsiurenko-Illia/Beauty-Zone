@@ -1,0 +1,141 @@
+@use '../utils/' as *;
+
+.about-section {
+    &__container {
+        display: block;
+
+        @media screen and (min-width: $bp-tablet) {
+            display: flex;
+            gap: 32px;
+        }
+    }
+
+    &__text {
+        margin-top: 24px;
+        max-width: 709px;
+        flex-grow: 3;
+
+        &::after {
+            position: relative;
+            left: calc(100% - 62px);
+            display: block;
+            content: '';
+            width: 40px;
+            height: 40px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('/img/Star\ 1.png');
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            margin-top: 40px;
+
+            &::after {
+                display: none;
+            }
+        }
+
+
+    }
+
+    &__title {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 100%;
+        margin-bottom: 24px;
+
+        @media screen and (min-width: $bp-desktop) {
+            font-family: "Play", sans-serif;
+            font-weight: 700;
+            font-size: 64px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__paragraph {
+        font-size: 18px;
+        line-height: 100%;
+
+        &:last-child {
+            margin-top: 16px;
+            width: 70%;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            padding-top: 40px;
+            font-size: 22px;
+            line-height: 38px;
+
+            &:last-child {
+                margin-top: 0;
+                width: 100%;
+            }
+        }
+    }
+
+    &__photo {
+        @media screen and (min-width: $bp-desktop) {
+            // display: block;
+            flex-grow: 2;
+            position: relative;
+        }
+    }
+
+    &__img-change-cheek,
+    &__img-change-neck {
+        max-width: 327px;
+        max-height: 327px;
+    }
+
+    &__img-change-cheek {
+        display: none;
+
+        @media screen and (min-width: $bp-tablet) {
+            display: block;
+            position: relative;
+        }
+    }
+
+    &__img-change-neck {
+        display: none;
+
+        @media screen and (min-width: $bp-desktop) {
+            display: block;
+            position: relative;
+            top: 40px;
+            right: -172px;
+        }
+
+    }
+
+    &__star1 {
+        display: none;
+
+        @media screen and (min-width: $bp-desktop) {
+            position: relative;
+            top: 70px;
+            right: 180px;
+        }
+    }
+
+    &__star2 {
+        display: none;
+
+        @media screen and (min-width: $bp-desktop) {
+            position: relative;
+            bottom: 250px;
+            right: -100px;
+        }
+    }
+
+    &__star3 {
+        display: none;
+
+        @media screen and (min-width: $bp-desktop) {
+            position: relative;
+            bottom: 54px;
+            left: 56px;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@use '../utils/' as *;
+
+.form {
+    &__text {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        color: var(--color-primary-light);
+        margin-bottom: 24px;
+
+        @media screen and (min-width: $bp-desktop) {
+            font-weight: 600;
+            margin-bottom: 32px;
+        }
+    }
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__btn:hover {
+        color: var(--color-primary-light);
+    }
+
+    &__terms {
+        color: var(--color-secondary-gray-light);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.5;
+        text-align: center;
+        margin-top: 8px;
+    }
+
+    &__terms-link {
+        color: var(--color-secondary-gray-light);
+        text-underline-position: 2px;
+    }
+}

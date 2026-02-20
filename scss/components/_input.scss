@@ -1,0 +1,45 @@
+@use '../utils/' as *;
+
+.input {
+    position: relative;
+
+    &__label {
+        position: absolute;
+        top: 16px;
+        left: 42px;
+    }
+
+    &__control {
+        padding: 16px 24px;
+        width: 100%;
+        font-size: 13px;
+        line-height: 100%;
+        color: var(--color-primary-light);
+        border: 1.5px solid var(--color-secondary-gray-light);
+        border-radius: 32px;
+        background-color: transparent;
+
+        @media screen and (min-width: $bp-desktop) {
+            padding: 18px 32.85px;
+            border: 2px solid var(--color-secondary-gray-light);
+        }
+    }
+
+    &__control:focus {
+        border-color: var(--color-secondary-gray-light);
+        background-color: var(--color-secondary-gray-light);
+        outline: none;
+    }
+
+    &__control::placeholder {
+        color: var(--color-primary-light);
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    &__control:focus::placeholder {
+        color: var(--color-primary-light);
+    }
+}
