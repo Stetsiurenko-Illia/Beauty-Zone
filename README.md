@@ -3,7 +3,7 @@
 A high-performance, responsive landing page for a beauty salon, developed with a focus on semantic HTML5 and scalable CSS architecture.
 
 ## 🚀 Live Demo
-[View the live site here](https://stetsiurenko-illia.github.io/Beauty-Zone/)
+[View the live site here](https://landing-beauty-zone.netlify.app/)
 
 ## 🛠 Technical Stack
 * **HTML5**: Semantic markup for better SEO and accessibility.
